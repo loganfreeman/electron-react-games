@@ -16,5 +16,3 @@
 1. Run `cd app`
 1. Run `npm install`
 1. Run `npm run package`
-
-Built application files can be found in `simpledoku/dist/[current version number]/Simpledoku-darwin-x64`.

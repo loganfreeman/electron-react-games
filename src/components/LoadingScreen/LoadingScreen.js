@@ -19,7 +19,7 @@ class LoadingScreen extends Component {
   render() {
     return (
       <section className="simpledoku-loading">
-        <h1>Simpledoku</h1>
+        <h1>React games</h1>
       </section>
     );
   }

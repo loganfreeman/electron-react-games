@@ -10,14 +10,14 @@ class MenuScreen extends Component {
   render() {
     return (
       <article className="simpledoku-page simpledoku-page--menu">
-        <h1>Simpledoku</h1>
+        <h1>Choose a game to play</h1>
         <nav className="simpledoku-menu">
           <ul>
             <li>
-              <Link to="/game/play">Play Game</Link>
+              <Link to="/game/play">Play Sudoku</Link>
             </li>
             <li>
-              <Link to="/game/help">Instructions</Link>
+              <Link to="/game/help">Help</Link>
             </li>
             <li>
               <Link to="/game/about">About</Link>
