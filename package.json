@@ -1,23 +1,23 @@
 {
-  "name": "simpledoku",
+  "name": "electron-react-games",
   "version": "0.2.1",
-  "description": "Electron app sudoku game built on React",
+  "description": "Electron games built with React",
   "keywords": [
     "sudoku",
     "electron",
     "game"
   ],
-  "homepage": "https://github.com/dvdagames/simpledoku",
-  "bugs": "https://github.com/dvdagames/simpledoku/issues",
+  "homepage": "https://github.com/loganfreeman/electron-react-games",
+  "bugs": "https://github.com/loganfreeman/electron-react-games/issues",
   "license": "MIT",
   "author": {
-    "name": "Eric Allen",
-    "url": "https://www.interwebalchemy.com/"
+    "name": "Logan Freeman",
+    "url": "https://github.com/loganfreeman"
   },
   "main": "app/window.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dvdagames/simpledoku"
+    "url": "https://github.com/loganfreeman/electron-react-games"
   },
   "scripts": {
     "clean": "cleandir ./app/",
