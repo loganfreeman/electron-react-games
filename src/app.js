@@ -19,7 +19,7 @@ import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import MenuScreen from './components/MenuScreen/MenuScreen';
 import HelpPage from './components/HelpPage/HelpPage';
 import AboutPage from './components/AboutPage/AboutPage';
-import Game from './components/Game/Game';
+import SudokuGame from './components/Game/Game';
 import Generator from './components/Generator/Generator';
 
 render((
@@ -27,7 +27,7 @@ render((
     <Route path="/" component={LoadingScreen} />
     <Route path="/game/menu" component={MenuScreen} />
     <Route path="/game/about" component={AboutPage} />
-    <Route path="/game/play" component={Game} />
+    <Route path="/game/sudoku" component={SudokuGame} />
     <Route path="/game/help" component={HelpPage} />
     <Route path="/game/generator" component={Generator} />
   </Router>

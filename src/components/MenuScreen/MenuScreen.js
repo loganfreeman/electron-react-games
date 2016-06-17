@@ -14,7 +14,7 @@ class MenuScreen extends Component {
         <nav className="simpledoku-menu">
           <ul>
             <li>
-              <Link to="/game/play">Play Sudoku</Link>
+              <Link to="/game/sudoku">Play Sudoku</Link>
             </li>
             <li>
               <Link to="/game/help">Help</Link>
