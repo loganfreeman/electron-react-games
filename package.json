@@ -22,6 +22,7 @@
   "scripts": {
     "clean": "cleandir ./app/",
     "copy:main": "cp ./src/window.js ./app/window.js",
+    "copy:font": "cp -r ./src/css ./app & cp -r ./src/fonts ./app",
     "copy:html": "cp ./src/index.html ./app/index.html",
     "copy:services": "rm -rf ./app/services && mkdir ./app/services && cp ./src/services/puzzle.js ./app/services/puzzle.js",
     "copy:music": "cp -rf ./src/assets/music/ ./app/assets",
@@ -31,7 +32,7 @@
     "watch": "webpack --watch",
     "eslint": "npm run lint",
     "build": "npm run clean && webpack -p",
-    "generate": "npm run copy:main & npm run copy:html & npm run copy:services & npm run copy:templates & npm run copy:music",
+    "generate": "npm run copy:main & npm run copy:html & npm run copy:services & npm run copy:templates & npm run copy:music & npm run copy:font",
     "start": "npm run generate && npm run electron",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -64,7 +65,8 @@
     "open": "0.0.5",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
-    "react-router": "^2.0.1"
+    "react-router": "^2.0.1",
+    "underscore": "^1.8.3"
   },
   "engines": {
     "node": ">=5.x.x"

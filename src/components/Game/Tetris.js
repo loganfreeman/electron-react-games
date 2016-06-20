@@ -8,21 +8,7 @@
  */
 
 import React, { Component, PropTypes } from 'react';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Tetris.css';
-import classNames from 'classnames/bind';
-import {List, ListItem} from 'material-ui/List';
-import NavigationArrowForward from 'material-ui/svg-icons/navigation/arrow-forward';
-import NavigationArrowBack from 'material-ui/svg-icons/navigation/arrow-back';
-import NavigationArrowDownward from 'material-ui/svg-icons/navigation/arrow-downward';
-import NavigationArrowUpward from 'material-ui/svg-icons/navigation/arrow-upward';
-import EditorSpaceBar from 'material-ui/svg-icons/editor/space-bar';
-import FlatButton from 'material-ui/FlatButton';
-import FontIcon from 'material-ui/FontIcon';
-import AvPause from 'material-ui/svg-icons/av/pause';
-import AvPlayArrow from 'material-ui/svg-icons/av/play-arrow';
-import AvStop from  'material-ui/svg-icons/av/stop';
-import HardwareGamepad from  'material-ui/svg-icons/hardware/gamepad';
+import cx from 'classnames';
 import * as game from './TetrisGame';
 import _ from 'underscore';
 import {
@@ -32,7 +18,7 @@ import {
   getBoardWidth,
   GameData
 } from './TetrisGame';
-class Tetris extends Component {
+export default class Tetris extends Component {
 
   constructor(props) {
     super(props);
@@ -292,11 +278,10 @@ class Tetris extends Component {
 
 
   render() {
-    let cx = classNames.bind(s);
     let cells = this.state.grid.map((cell, i) => {
       let styles = this.getFilledCustomColor(cell);
       let pieceClasses = this.getFilledClass(cell).map((c) => {
-        return s[c];
+        return c;
       })
       return (
         <div style={styles} key={i} className={cx(pieceClasses)}/>
@@ -309,8 +294,8 @@ class Tetris extends Component {
     return (
       <div className="flexbox-container">
         <div>
-          <div className={cx(s['dy-game-board'])}>
-            <div className={cx(s['dy-grid-container'])}>
+          <div className={cx('dy-game-board')}>
+            <div className={cx('dy-grid-container')}>
               {cells}
             </div>
           </div>
@@ -349,5 +334,3 @@ class Tetris extends Component {
   }
 
 }
-
-export default withStyles(s)(Tetris);
