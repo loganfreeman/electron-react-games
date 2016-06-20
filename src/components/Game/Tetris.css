@@ -1,0 +1,665 @@
+dy-home {
+  padding-top: 20px;
+}
+.dy-home .dy-game-title {
+  font-size: 60px;
+  line-height: 65px;
+  font-weight: bold;
+  color: #776e65;
+}
+.dy-home .dy-section {
+  margin: 0 auto;
+}
+.dy-home .dy-button {
+  background: #8f7a66;
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  text-decoration: none;
+  line-height: 42px;
+  cursor: pointer;
+  text-align: center;
+  color: #f9f6f2;
+  padding: 0 20px;
+  border: none;
+  float: right;
+}
+.dy-home .dy-score {
+  position: relative;
+  height: 55px;
+  line-height: 55px;
+  padding: 10px 20px 0px 20px;
+  display: inline-block;
+  background: #bbada0;
+  color: white;
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  font-size: 25px;
+  font-weight: bold;
+  border-width: 1px;
+  margin-bottom: 5px;
+  cursor: default;
+}
+.dy-home .dy-score:after {
+  content: 'score';
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  color: #eee4da;
+}
+.dy-home .dy-best-score {
+  position: relative;
+  height: 55px;
+  line-height: 55px;
+  padding: 10px 20px 0px 20px;
+  display: inline-block;
+  background: #bbada0;
+  color: white;
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  font-size: 25px;
+  font-weight: bold;
+  border-width: 1px;
+  margin-bottom: 5px;
+  cursor: default;
+}
+.dy-home .dy-best-score:after {
+  content: 'best';
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  color: #eee4da;
+}
+.dy-home .dy-speed-role {
+  position: relative;
+  height: 55px;
+  line-height: 55px;
+  padding: 10px 20px 0px 20px;
+  display: inline-block;
+  background: #bbada0;
+  color: white;
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  font-size: 25px;
+  font-weight: bold;
+  border-width: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+.dy-home .dy-speed-role:after {
+  content: 'level';
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  color: #eee4da;
+}
+.dy-home .dy-design-new-tetris {
+  position: relative;
+  height: 55px;
+  line-height: 55px;
+  padding: 10px 20px 0px 20px;
+  display: inline-block;
+  background: #bbada0;
+  color: white;
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  font-size: 25px;
+  font-weight: bold;
+  border-width: 1px;
+}
+.dy-home .dy-design-new-tetris:after {
+  content: 'Design';
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  color: #eee4da;
+}
+.dy-home .dy-instructions {
+  color: #776e65;
+  line-height: 65px;
+}
+.dy-home .dy-game-container {
+  margin-top: 10px;
+  margin-bottom: -8px;
+}
+.dy-home .dy-score-container {
+  padding-bottom: 10px;
+}
+.dy-home .dy-how-to-pause {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 19px;
+  text-align: right;
+  color: #776e65;
+}
+.dy-home .dy-game-control {
+  position: relative;
+  margin: 0 auto;
+  width: 270px;
+}
+.dy-home .dy-game-start-btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.dy-home .dy-new-game-btn {
+  font-weight: bold;
+  width: 100%;
+  margin-top: 100px;
+}
+.dy-home .dy-game-start {
+  width: 100%;
+  height: 100%;
+  background: rgba(238, 228, 218, 0.5);
+}
+.dy-home .dy-game-over {
+  width: 100%;
+  height: 100%;
+  color: #776e65;
+  background: rgba(238, 228, 218, 0.73);
+  text-align: center;
+  padding-top: 10px;
+}
+.dy-home .dy-game-over p {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+  margin-top: 150px;
+}
+.dy-home .dy-game-over .dy-new-game-btn {
+  margin-top: 30px;
+}
+.dy-home .dy-your-score {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  font-size: 40px;
+  color: grey;
+  font-weight: bold;
+}
+.dy-home .dy-new-record {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  font-size: 40px;
+  color: #d79936;
+  font-weight: bold;
+}
+.dy-home .dy-mobile-score {
+  position: absolute;
+  z-index: 1000;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 70px;
+  font-family: 'Shadows Into Light', cursive;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+}
+.dy-home .dy-mobile-speed {
+  position: absolute;
+  right: 38px;
+  z-index: 1000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 70px;
+  font-family: 'Shadows Into Light', cursive;
+  color: rgba(0, 0, 0, 0.5);
+}
+.dy-game-board {
+  position: relative;
+  background: #bbaaa0;
+  padding-top: 10px;
+  width: 270px;
+  height: 520px;
+}
+.dy-game-board .dy-grid-container {
+  position: absolute;
+  z-index: 1;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.dy-game-board .dy-grid-cell {
+  background: rgba(238, 228, 218, 0.35);
+  -webkit-border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 3px;
+  -moz-background-clip: padding;
+  border-radius: 3px;
+  background-clip: padding-box;
+  width: 25px;
+  height: 25px;
+  float: left;
+  border: 1px solid #bbaaa0;
+}
+.dy-game-board .dy-L-filled {
+  background-color: #92e1fc;
+  color: #6495ed;
+}
+.dy-game-board .dy-O-filled {
+  background-color: #92e4b5;
+  color: #008b8b;
+}
+.dy-game-board .dy-I-filled {
+  background-color: #f05f5f;
+  color: #deb887;
+}
+.dy-game-board .dy-T-filled {
+  background-color: #fbe5a2;
+  color: #b8860b;
+}
+.dy-game-board .dy-J-filled {
+  background-color: #fb9fa8;
+  color: #7b3f00;
+}
+.dy-game-board .dy-S-filled {
+  background-color: #f59563;
+  color: #990000;
+}
+.dy-game-board .dy-Z-filled {
+  background-color: #fefdfd;
+  color: #a9a9a9;
+}
+.dy-game-board .dy-ghost-piece {
+  -webkit-box-shadow: 0px 0px 0px 3px #776e65 inset;
+  -moz-box-shadow: 0px 0px 0px 3px #776e65 inset;
+  box-shadow: 0px 0px 0px 3px #776e65 inset;
+}
+.dy-piece-ready {
+  -webkit-transition: top 0.3s linear;
+  -moz-transition: top 0.3s linear;
+  -o-transition: top 0.3s linear;
+  transition: top 0.3s linear;
+  top: 0;
+  left: 10px;
+}
+.dy-piece {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.dy-piece .dy-piece-ul {
+  width: 100px;
+  height: 100px;
+}
+.dy-piece .dy-piece-li {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: top;
+}
+.dy-piece .dy-pattern {
+  border: 1px solid #bbaaa0;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+.dy-piece .dy-pattern:before {
+  content: '\f08a';
+}
+.dy-piece .dy-L .dy-pattern {
+  background-color: #92e1fc;
+  color: #6495ed;
+}
+.dy-piece .dy-O .dy-pattern {
+  background-color: #92e4b5;
+  color: #008b8b;
+}
+.dy-piece .dy-I .dy-pattern {
+  background-color: #f05f5f;
+  color: #deb887;
+}
+.dy-piece .dy-T .dy-pattern {
+  background-color: #fbe5a2;
+  color: #b8860b;
+}
+.dy-piece .dy-J .dy-pattern {
+  background-color: #fb9fa8;
+  color: #7b3f00;
+}
+.dy-piece .dy-S .dy-pattern {
+  background-color: #f59563;
+  color: #990000;
+}
+.dy-piece .dy-Z .dy-pattern {
+  background-color: #fefdfd;
+  color: #a9a9a9;
+}
+.dy-game-menu-modal {
+  position: fixed;
+  z-index: 1060;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: auto;
+  overflow-y: scroll;
+  margin: 0;
+}
+.dy-game-menu .modal-header {
+  font-weight: bold;
+}
+.dy-game-menu .modal-body {
+  min-height: 100px;
+  padding-top: 0px;
+}
+.dy-game-menu .modal-content {
+  position: relative;
+}
+.dy-game-menu .modal-header {
+  background-color: #faf8ef;
+}
+.dy-game-menu .dy-game-guide {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e5e5e5;
+  background: #f9f9f9;
+}
+.dy-game-menu .dy-game-buttons {
+  padding-top: 20px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.dy-game-menu .slider-horizontal {
+  width: 100%;
+}
+.dy-game-menu .dy-game-settings {
+  padding-top: 20px;
+}
+.dy-game-menu .dy-game-settings span {
+  display: inline-block;
+  padding-top: 20px;
+}
+.dy-game-menu .dy-game-design {
+  padding-top: 20px;
+}
+.dy-game-menu .dy-game-design span {
+  color: darkslateblue;
+}
+.dy-game-menu .dy-back-btn {
+  margin-top: 15px;
+}
+.dy-game-menu .dy-game-load-game {
+  margin-top: 20px;
+}
+.dy-design-piece {
+  padding-top: 20px;
+  position: relative;
+}
+.dy-design-piece .dy-design-container {
+  padding: 5px;
+  display: inline-block;
+  background-color: #bbaaa0;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.dy-design-piece .dy-piece-ul {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0px;
+}
+.dy-design-piece .dy-piece-li {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgba(238, 228, 218, 0.35);
+  border: 1px solid #bbaaa0;
+  cursor: pointer;
+}
+.dy-design-piece .dy-alert {
+  position: absolute;
+  right: 0;
+  top: -125px;
+}
+.dy-design-piece .dy-alert div {
+  height: 56px;
+}
+.dy-design-piece .dy-save-btn {
+  margin-top: 15px;
+}
+.dy-design-piece .alert-warning {
+  vertical-align: bottom;
+  line-height: 34px;
+  padding: 5px;
+}
+.dy-design-piece .dy-color {
+  margin-top: 15px;
+}
+.dy-design-piece .dy-0 {
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  border: 5px solid #5cb85c;
+  padding: 0;
+}
+.dy-design-piece .dy-90 {
+  -webkit-transform: rotate(90);
+  -ms-transform: rotate(90);
+  -o-transform: rotate(90);
+  transform: rotate(90);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  pointer-events: none;
+}
+.dy-design-piece .dy-180 {
+  -webkit-transform: rotate(180);
+  -ms-transform: rotate(180);
+  -o-transform: rotate(180);
+  transform: rotate(180);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  pointer-events: none;
+}
+.dy-design-piece .dy-270 {
+  -webkit-transform: rotate(270);
+  -ms-transform: rotate(270);
+  -o-transform: rotate(270);
+  transform: rotate(270);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  pointer-events: none;
+}
+.dy-design-piece .dy-preview-90 {
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  top: 9px;
+  left: -4px;
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.dy-design-piece .dy-preview-180 {
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  top: 20px;
+  padding-left: 7px;
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.dy-design-piece .dy-preview-270 {
+  position: absolute;
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  transform: rotate(-270deg);
+  top: 23px;
+  left: 4px;
+  font-size: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.dy-design-piece .dy-color {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  margin: 0 1em 0 0;
+  cursor: pointer;
+}
+.dy-design-piece .dy-color-section {
+  padding-top: 20px;
+}
+.dy-design-piece .dy-color-section ul {
+  height: 2em;
+}
+.di-mobile-controller .dy-mobile-btn {
+  text-align: center;
+  font-size: 35px;
+  line-height: 35px;
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width: 767px) {
+  /* Styles */
+  .dy-home .dy-game-title {
+    font-size: 55px;
+  }
+  .dy-home .dy-score,
+  .dy-home .dy-best-score {
+    margin-bottom: 0px;
+  }
+  .dy-home .dy-speed-role {
+    margin-bottom: 0px;
+  }
+  .dy-home .dy-section {
+    width: 288px;
+  }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width: 500px) {
+  /* Styles */
+  .dy-home .dy-game-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .dy-home .dy-instructions {
+    font-size: 14px;
+    line-height: 40px;
+  }
+  .dy-home .dy-how-to-pause {
+    font-size: 13px;
+    text-align: center;
+  }
+  .dy-home .dy-speed-role,
+  .dy-home .dy-best-score,
+  .dy-home .dy-score {
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width: 500px) {
+  /* Styles */
+  .dy-game-menu .modal-body {
+    font-size: 14px;
+  }
+  .dy-game-menu button {
+    line-height: 34px;
+  }
+  .dy-game-menu .dy-bootstrap-slider {
+    width: 100%;
+  }
+  .dy-game-menu .dy-bootstrap-slider label {
+    float: none;
+    display: block;
+    -webkit-border-radius: 0;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 0;
+    -moz-background-clip: padding;
+    border-radius: 0;
+    background-clip: padding-box;
+    font-size: 18px;
+  }
+  .dy-game-menu .dy-bootstrap-slider label:first-child {
+    margin-left: -1px;
+  }
+  .dy-game-menu .dy-game-buttons div {
+    display: block;
+    width: 100%;
+  }
+  .dy-game-menu .dy-game-buttons button {
+    width: 100%;
+  }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width: 500px) {
+  /* Styles */
+  .dy-bootstrap-slider .btn-primary {
+    font-size: 10px;
+  }
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width: 500px) {
+  /* Styles */
+  .dy-design-piece .dy-alert {
+    top: -139px;
+  }
+  .dy-design-piece .alert-warning {
+    padding: 14px;
+    vertical-align: inherit;
+  }
+}
