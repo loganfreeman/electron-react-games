@@ -32,6 +32,8 @@ export default class Tetris extends Component {
 
   componentDidMount() {
     this.gameOn();
+    this.boundKeypressHandler = this.handleKeypress.bind(this);
+
     window.addEventListener('keydown', this.boundKeypressHandler);
   }
 
@@ -109,7 +111,6 @@ export default class Tetris extends Component {
     this.updateGhostPiece();
   }
 
-  boundKeypressHandler = this.handleKeypress.bind(this);
 
   componentWillUnmount() {
     this.gameOver();
@@ -117,16 +118,15 @@ export default class Tetris extends Component {
   }
 
   gameOn() {
+    let loop = _.throttle(this.gameLoop, this.getGameSpeed(), {
+          leading: false,
+          trailing: false
+      });
     window.requestAnimationFrame(() => this.gameOn()); // use arrow functions to lexically capture this
     if(!this.isGamePause() && this.isGameStart()) {
         this.loop();
     }
   }
-
-  loop = _.throttle(this.gameLoop, this.getGameSpeed(), {
-      leading: false,
-      trailing: false
-  })
 
   gameLoop() {
     this.moveCurrentPiece();
@@ -289,7 +289,7 @@ export default class Tetris extends Component {
     })
     let pauseText = this.state.isPause ? 'Resume' : 'Pause';
 
-    let pauseIcon = this.state.isPause ? <AvPause /> : <AvPlayArrow />;
+    let pauseIcon = this.state.isPause ? <i className={'material-icons'} >pause</i> : <i className={'material-icons'}>play_arrow</i>;
 
     return (
       <div className="flexbox-container">
@@ -301,33 +301,41 @@ export default class Tetris extends Component {
           </div>
           <div>
             <div>
-              <FlatButton
-                onClick={() => this.startGame()}
-                label="New Game"
-                icon={<HardwareGamepad />}
-              />
-              <FlatButton
-                onClick={() => this.setGamePause(!this.state.isPause)}
-                label={pauseText}
-                icon={pauseIcon}
-              />
-              <FlatButton
-                onClick={() => this.gameOver()}
-                label="Stop"
-                icon={<AvStop />}
-              />
+              <button onClick={() => this.startGame()}>
+              <i className={'material-icons'}>android</i>
+              </button>
+              <button onClick={() => this.setGamePause(!this.state.isPause)}>
+              {pauseIcon}
+              </button>
+              <button onClick={() => this.gameOver()}>
+              <i className={'material-icons'}>stop</i>
+              </button>
             </div>
           </div>
         </div>
         <div>
           <h1>Instructions</h1>
-          <List>
-            <ListItem primaryText="Move to the right" rightIcon={<NavigationArrowForward />} />
-            <ListItem primaryText="Rotate left" rightIcon={<NavigationArrowDownward />} />
-            <ListItem primaryText="Rotate right" rightIcon={<NavigationArrowUpward />} />
-            <ListItem primaryText="Move to the left" rightIcon={<NavigationArrowBack />} />
-            <ListItem primaryText="All the way to the bottom" rightIcon={<EditorSpaceBar />} />
-          </List>
+          <ul>
+            <li >
+            <i className={'material-icons'}>stop</i>
+            </li>
+
+            <li >
+            <i className={'material-icons'}>stop</i>
+            </li>
+
+            <li >
+            <i className={'material-icons'}>stop</i>
+            </li>
+
+            <li >
+            <i className={'material-icons'}>stop</i>
+            </li>
+
+            <li  >
+            <i className={'material-icons'}>stop</i>
+            </li>
+          </ul>
         </div>
       </div>
     );

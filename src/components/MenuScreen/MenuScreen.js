@@ -17,6 +17,9 @@ class MenuScreen extends Component {
               <Link to="/game/sudoku">Play Sudoku</Link>
             </li>
             <li>
+              <Link to="/game/tetris">Play Tetris</Link>
+            </li>
+            <li>
               <Link to="/game/help">Help</Link>
             </li>
             <li>
