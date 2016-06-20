@@ -315,25 +315,25 @@ export default class Tetris extends Component {
         </div>
         <div>
           <h1>Instructions</h1>
-          <ul>
+          <ul className={'instrunction-list'}>
             <li >
-            <i className={'material-icons'}>stop</i>
+            <i className={'material-icons'}>arrow_forward</i>
             </li>
 
             <li >
-            <i className={'material-icons'}>stop</i>
+            <i className={'material-icons'}>arrow_upward</i>
             </li>
 
             <li >
-            <i className={'material-icons'}>stop</i>
+            <i className={'material-icons'}>arrow_back</i>
             </li>
 
             <li >
-            <i className={'material-icons'}>stop</i>
+            <i className={'material-icons'}>arrow_downward</i>
             </li>
 
             <li  >
-            <i className={'material-icons'}>stop</i>
+            <i className={'material-icons'}>space_bar</i>
             </li>
           </ul>
         </div>

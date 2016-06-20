@@ -83,7 +83,7 @@ app.on('will-finish-launching', () => {
 app.on('ready', () => {
   mainWindow = new BrowserWindow({
     width: 530,
-    height: 600
+    height: 800
   });
 
   mainWindow.loadURL('http://localhost:3333/');
