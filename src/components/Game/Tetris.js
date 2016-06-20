@@ -124,7 +124,7 @@ export default class Tetris extends Component {
       });
     window.requestAnimationFrame(() => this.gameOn()); // use arrow functions to lexically capture this
     if(!this.isGamePause() && this.isGameStart()) {
-        this.loop();
+        loop();
     }
   }
 
