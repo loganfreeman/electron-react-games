@@ -317,7 +317,6 @@ export default class Tetris extends Component {
           </div>
         </div>
         <div>
-          <h1>Instructions</h1>
           <ul className={'instrunction-list'}>
             <li >
             <i className={'material-icons'}>arrow_forward</i>
