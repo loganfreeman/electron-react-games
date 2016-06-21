@@ -22,6 +22,7 @@ export default class Tetris extends Component {
 
   constructor(props) {
     super(props);
+    this.loop = _.throttle(this.gameLoop, this.getGameSpeed());
   }
 
   componentWillMount() {
@@ -118,14 +119,16 @@ export default class Tetris extends Component {
   }
 
   gameOn() {
-    let loop = _.throttle(this.gameLoop, this.getGameSpeed(), {
-          leading: false,
-          trailing: false
-      });
+
     window.requestAnimationFrame(() => this.gameOn()); // use arrow functions to lexically capture this
-    if(!this.isGamePause() && this.isGameStart()) {
-        loop();
+
+    if(this.shouldLoop()) {
+        this.loop();
     }
+  }
+
+  shouldLoop() {
+    return !this.isGamePause() && this.isGameStart();
   }
 
   gameLoop() {

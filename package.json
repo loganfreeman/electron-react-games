@@ -27,7 +27,7 @@
     "copy:services": "rm -rf ./app/services && mkdir ./app/services && cp ./src/services/puzzle.js ./app/services/puzzle.js",
     "copy:music": "cp -rf ./src/assets/music/ ./app/assets",
     "copy:templates": "cp ./src/templates/app.package.json ./app/package.json",
-    "electron": "electron .",
+    "electron": "electron . --enable-logging",
     "server": "node ./app/server.js",
     "watch": "webpack --watch",
     "eslint": "npm run lint",
